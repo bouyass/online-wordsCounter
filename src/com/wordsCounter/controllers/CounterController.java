@@ -12,7 +12,7 @@ public class CounterController extends HttpServlet{
 
 	public void doGet(HttpServletResponse response, HttpServletRequest request) throws IOException {
 	
-		String text = request.getParameter("text");
+		String text = (String) request.getParameter("text");
 		System.out.println(text);
 		System.out.println("lyes");
         response.getWriter().write(text);
