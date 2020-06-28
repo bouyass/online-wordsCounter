@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.wordsCounter.services.CounterService;
 
+@SuppressWarnings("serial")
 public class CounterController extends HttpServlet {
 	
 	private CounterService cs;
@@ -22,11 +23,12 @@ public class CounterController extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String text = request.getParameter("text");
 		String filter = request.getParameter("filter");
-		System.out.println(filter);
+		String lang = request.getParameter("lang");
+		System.out.println(lang);
 		PrintWriter writer =  response.getWriter();
 		int numberC = this.cs.numberOfCharacters(text);
-		int numberW = this.cs.numberOfWords(text,filter);
-		writer.write(Integer.toString(numberC)+" "+Integer.toString(numberW));
+		long numberW = this.cs.numberOfWords(text,filter,lang);
+		writer.write(Integer.toString(numberC)+" "+Long.toString(numberW));
 	}
 
 }

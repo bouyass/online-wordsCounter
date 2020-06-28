@@ -31,6 +31,7 @@ $(document).ready(function() {
 			data:{
 				text: $("#area").val(),
 				filter: checked,
+				lang: $("#lang").val()
 			}
 		}).done(function(response) {
 			var responses = response.split(" ");

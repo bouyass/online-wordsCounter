@@ -1,5 +1,7 @@
 package com.wordsCounter.services;
 
+import java.util.Arrays;
+
 public class CounterService {
 	
 	String[] englishPrepositions = {"of","with","at","from","into","during","including","until","against","among","throughout","despite",
@@ -14,9 +16,13 @@ public class CounterService {
 		return text.length();
 	}
 	
-	public int numberOfWords(String text,String filter) {
-		if(filter.equals("true")) {
-			return text.split(" ").stream();
+	public long numberOfWords(String text,String filter,String lang) {
+		if(filter.trim().equals("true")) {
+			if(lang.equals("french")) {
+				return Arrays.asList(text.split(" ")).stream().filter(x -> x.contains(Arrays.toString(frenchPrepositions))).count();
+			}else {
+				return Arrays.asList(text.split(" ")).stream().filter(x -> x.contains(Arrays.toString(englishPrepositions))).count();
+			}
 		}else {
 			return text.split(" ").length;
 		}
