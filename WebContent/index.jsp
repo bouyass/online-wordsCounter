@@ -41,9 +41,17 @@
 		</div>
 		
 		<div class="form-group row">
-		<label for="inputPassword" class="col-sm-2 col-form-label">Number of words</label>
+		<label for="inputPassword" class="col-sm-2 col-form-label">Number of characters</label>
 		<div class="col-sm-10">
 			<input disabled type="number" class="form-control" id="numberCa"
+				placeholder="number of words">
+		</div>
+		</div>
+		
+		<div class="form-group row">
+		<label for="inputPassword" class="col-sm-2 col-form-label">Number of words</label>
+		<div class="col-sm-10">
+			<input disabled type="number" class="form-control" id="numberWo"
 				placeholder="number of words">
 		</div>
 		</div>

@@ -26,13 +26,16 @@ $(document).ready(function() {
 
 	$("#area").on('change keyup paste', function() {
 		$.ajax({
-			type: "get",
-			url : "http://localhost:8080/wordsCounter",
-			data : {
-				text : "lyes"
+			type: "post",
+			url : "http://localhost:8080/wordsCounter/counter",
+			data:{
+				text: $("#area").val(),
+				filter: checked,
 			}
 		}).done(function(response) {
-			$("#numberCa").val(response)
+			var responses = response.split(" ");
+			$("#numberCa").val(responses[0])
+			$("#numberWo").val(responses[1])
 		});
 	});
 
