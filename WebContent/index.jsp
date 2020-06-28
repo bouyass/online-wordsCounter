@@ -15,6 +15,9 @@ body{
 	color:white;
 	font-size:17px;
 }
+textarea{
+	height:400px;
+}
 
 
 </style>
@@ -40,14 +43,14 @@ body{
 			preposition words</label>
 	</div>
 
-	<br/><br/>
+	<br/>
 
 		<select onChange="langs()" id="lang" name="language" class="custom-select custom-select-sm">
 			<option name="none" value="none" selected>Choose your language</option>
 			<option name="french" value="french">French</option>
 			<option name="english" value="english">English</option>
 		</select>
-
+		<br/><br/>
 		<div class="text">
 			<div class="form-group">
 				<label class="color" for="exampleFormControlTextarea1">Your text here </label>
@@ -55,7 +58,7 @@ body{
 					rows="3"></textarea>
 			</div>
 		</div>
-		
+		<br/>
 		<div class="form-group row">
 		<label for="inputPassword" class="col-sm-2 col-form-label color">Number of characters</label>
 		<div class="col-sm-10">
