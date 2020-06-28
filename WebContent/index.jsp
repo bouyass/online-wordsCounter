@@ -5,7 +5,8 @@
 <head>
 <style>
 .container {
-
+background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4);
 }
 
 body{
@@ -52,7 +53,7 @@ body{
 		<div class="text">
 			<div class="form-group">
 				<label class="color" for="exampleFormControlTextarea1">Your text here </label>
-				<textarea placeholder="Type your text here" style="height:280px;" disabled class="form-control" id="area"
+				<textarea placeholder="Type your text here" style="height:260px;" disabled class="form-control" id="area"
 					rows="3"></textarea>
 			</div>
 		</div>
