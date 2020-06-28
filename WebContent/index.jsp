@@ -3,6 +3,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.container {
+
+}
+
+body{
+	background-image: url('https://graliv.com/images/bg1.jpg');	
+}
+.color{
+	color:white;
+	font-size:17px;
+}
+
+
+</style>
 <meta charset="ISO-8859-1">
 <title>Online word counter</title>
 <link rel="stylesheet"
@@ -18,13 +33,14 @@
 			width="30" height="30" alt=""> </a>
 	</nav>
 
+<div style="margin-top:5%;bg-color:bleu;" class="container">
 	<div class="custom-control custom-checkbox">
 		<input onClick="check()" name="filter" type="checkbox" class="custom-control-input" id="customCheck1">
-		<label class="custom-control-label" for="customCheck1">Filter
+		<label  class="custom-control-label color" for="customCheck1">Filter
 			preposition words</label>
 	</div>
 
-	
+	<br/><br/>
 
 		<select onChange="langs()" id="lang" name="language" class="custom-select custom-select-sm">
 			<option name="none" value="none" selected>Choose your language</option>
@@ -34,14 +50,14 @@
 
 		<div class="text">
 			<div class="form-group">
-				<label for="exampleFormControlTextarea1">Your text here </label>
+				<label class="color" for="exampleFormControlTextarea1">Your text here </label>
 				<textarea disabled class="form-control" id="area"
 					rows="3"></textarea>
 			</div>
 		</div>
 		
 		<div class="form-group row">
-		<label for="inputPassword" class="col-sm-2 col-form-label">Number of characters</label>
+		<label for="inputPassword" class="col-sm-2 col-form-label color">Number of characters</label>
 		<div class="col-sm-10">
 			<input disabled type="number" class="form-control" id="numberCa"
 				placeholder="number of words">
@@ -49,11 +65,13 @@
 		</div>
 		
 		<div class="form-group row">
-		<label for="inputPassword" class="col-sm-2 col-form-label">Number of words</label>
+		<label for="inputPassword" class="col-sm-2 col-form-label color">Number of words</label>
 		<div class="col-sm-10">
 			<input disabled type="number" class="form-control" id="numberWo"
 				placeholder="number of words">
 		</div>
+		</div>
+		
 		</div>
 		 
 
