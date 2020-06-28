@@ -15,9 +15,7 @@ body{
 	color:white;
 	font-size:17px;
 }
-textarea{
-	height:400px;
-}
+
 
 
 </style>
@@ -54,7 +52,7 @@ textarea{
 		<div class="text">
 			<div class="form-group">
 				<label class="color" for="exampleFormControlTextarea1">Your text here </label>
-				<textarea disabled class="form-control" id="area"
+				<textarea placeholder="Type your text here" style="height:280px;" disabled class="form-control" id="area"
 					rows="3"></textarea>
 			</div>
 		</div>
