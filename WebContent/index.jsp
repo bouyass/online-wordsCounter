@@ -5,8 +5,8 @@
 <head>
 <style>
 .container {
-background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4);
+	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0, 0.4);
 }
 
 body{
@@ -35,7 +35,8 @@ body{
 			width="30" height="30" alt=""> </a>
 	</nav>
 
-<div style="margin-top:5%;bg-color:bleu;" class="container">
+<div style="margin-top:3%;bg-color:bleu;" class="container">
+<br/>
 	<div class="custom-control custom-checkbox">
 		<input onClick="check()" name="filter" type="checkbox" class="custom-control-input" id="customCheck1">
 		<label  class="custom-control-label color" for="customCheck1">Filter
@@ -73,6 +74,7 @@ body{
 				placeholder="number of words">
 		</div>
 		</div>
+		<br/>
 		
 		</div>
 		 
